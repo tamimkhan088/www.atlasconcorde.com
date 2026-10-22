@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import {
   ArrowDown,
   ArrowRight,
@@ -346,9 +347,9 @@ export default function Home() {
           <span>atlas concorde</span>
         </a>
         <div className="header-actions">
-          <button className="icon-button" aria-label="Account">
+          <Link href="/login" className="icon-button" aria-label="Account">
             <UserRound size={18} />
-          </button>
+          </Link>
           <button className="icon-button" aria-label="Downloads">
             <Download size={18} />
           </button>
